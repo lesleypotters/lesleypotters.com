@@ -1,0 +1,53 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+baseURL = "https://lesleypotters.netlify.app/"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+title = "Lesley Potters"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+enableEmoji = true
+enableRobotsTXT = true
+
+summaryLength = 0
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+
+googleAnalytics = ""
+
+[author]
+  name = "Lesley Potters"
+  image = "img/moi.jpg"
+  bio = "Personal website of Lesley Potters""
+  links = [
+    { github = "https://github.com/lesleypotters" },
+    { linkedin2 = "https://www.linkedin.com/in/lesleypotters/" },
+    { twitter = "https://www.twitter.com/home/"},
+    { google-scholar = "https://scholar.google.com/citations?user=l7EatXkAAAAJ&hl" }
+  #   { email = "/contact/" },
+  #   { link = "https://link-to-some-website.com/" },
+  #   { codepen = "https://codepen.io/username" },
+  #   { dev = "https://dev.to/username" },
+  #   { discord = "https://discord.gg/invitecode" },
+  #   { dribbble = "https://dribbble.com/username" },
+  #   { facebook = "https://facebook.com/username" },
+  #   { foursquare = "https://foursquare.com/username" },
+  #   { gitlab = "https://gitlab.com/username" },
+  #   { instagram = "https://instagram.com/username" },
+  #   { keybase = "https://keybase.io/username" },
+  #   { lastfm = "https://lastfm.com/user/username" },
+  #   { mastodon = "https://mastodon.instance/@username" },
+  #   { medium = "https://medium.com/username" },
+  #   { pinterest = "https://pinterest.com/username" },
+  #   { reddit = "https://reddit.com/user/username" },
+  #   { slack = "https://workspace.url/team/userid" },
+  #   { snapchat = "https://snapchat.com/add/username" },
+  #   { soundcloud = "https://soundcloud.com/username" },
+  #   { steam = "https://steamcommunity.com/profiles/userid" },
+  #   { tiktok = "https://tiktok.com/@username" },
+  #   { twitch = "https://twitch.tv/username" },
+  #   { youtube = "https://youtube.com/username" },
+  ]
