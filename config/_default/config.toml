@@ -16,7 +16,7 @@ summaryLength = 0
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
-googleAnalytics = ""
+googleAnalytics = "G-S554TD9ZLB"
 
 [author]
   name = "Lesley Potters"
