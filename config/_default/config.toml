@@ -21,9 +21,9 @@ googleAnalytics = "G-S554TD9ZLB"
 [author]
   name = "Lesley Potters"
   image = "img/moi.jpg"
-  bio = "Personal website of Lesley Potters""
+  bio = "Personal website of Lesley Potters"
   links = [
-    { github = "https://github.com/lesleypotters" },
+    { github = "https://github.com/lesleypotters/" },
     { linkedin2 = "https://www.linkedin.com/in/lesleypotters/" },
     { twitter = "https://www.twitter.com/home/"},
     { google-scholar = "https://scholar.google.com/citations?user=l7EatXkAAAAJ&hl" }
