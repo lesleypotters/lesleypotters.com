@@ -1,4 +1,4 @@
 # [lesleypotters.com](https://www.lesleypotters.com/)
 
-Personal website of Antoine Soetewey.
+Personal website of Lesley Potters
 
