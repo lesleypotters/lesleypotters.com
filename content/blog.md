@@ -1,12 +1,12 @@
 ---
-description: Other projects by Lesley Potters
+description: Blog of Lesley Potters
 draft: false
 showAuthor: false
 showDate: false
 showEdit: false
 showReadingTime: false
-slug: otherprojects
-title: Other projects
+slug: blog
+title: Blog
 ---
 
 Below you will find various projects that I usually not finish... (shame on me)
