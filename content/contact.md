@@ -9,4 +9,4 @@ slug: contact
 title: Contact
 ---
 
-Drop me an [email](mailto:ant.soetewey@gmail.com) if you want to get in touch.
+Drop me an [email](mailto:lesley.potters@gmail.com) if you want to get in touch.
