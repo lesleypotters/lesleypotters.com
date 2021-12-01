@@ -1,12 +1,12 @@
 ---
-title: "Test"
+title: Test
 author: Lesley Potters
-date: 2021-12-01
+date: '2021-12-01'
 slug: test
 categories: []
-output: 
-  blogdown::html_page
-    toc: True
+output:
+  blogdown::html_page:
+    toc: true
     toc_depth: 6
 # draft: true
 bibliography: bibliography.bib
