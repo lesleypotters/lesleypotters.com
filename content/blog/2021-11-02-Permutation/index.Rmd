@@ -1,8 +1,9 @@
 ---
-title: "Permutation"
-author: "Lesley Potters"
-date: "11/30/2021"
+title: Permutation
+author: Lesley Potters
+date: '11/30/2021'
 slug: permutation
+categories: []
 tags:
   - Permutation
   - Machine Learning
@@ -12,18 +13,17 @@ tags:
 output: 
   blogdown::html_page:
     toc: true
-    toc_depth: 4
-    
+    toc_depth: 6
+#draft: true
+#bibliography: bibliography.bib
 ---
-*Permutation* (per + mutare, or ‘thoroughly change’) is a fantastic way to check the importance of the features in your model.
+Permutation (per + mutare, or ‘thoroughly change’) is a fantastic way to check the importance of the features in your model.
 
 The idea behind it is very clever and simple at the same time: for each of the features you randomly shuffle the values per observation and you calculate what the impact is on the output. By adding this randomness in your input data, some hidden characteristics might be revealed.
 
 Below you find a simple visualization to make things clearer. This is using the sklearn dataset on diabetes, a toy dataset with 10 features (age, sex, bmi, blood pressure and six blood serum measurements s1…s6) for 442 patients and as target a quantitative measure of disease progression one year after baseline.
 
 For each of the features, there will be K permutations of randomly shuffling the values around, while keeping the rest the same.
-
-![](/images/permutare.JPG){width=100%}
 
 If the model score (measured by accuracy, precision, average loss, etc.) decreases, it seems that the true input has some good predictive power. If the shuffling does not have any effect on your model score (or it even improves your model’s score), the model works equally well or even better with the random (made up!) data than with the real data, so these feature are of little importance.
 
@@ -42,7 +42,7 @@ A quick example
 Let’s show an example, again using the sklearn diabetes dataset. First, we import the library and the data:
 
 Prepare the data:
-```{r test-python, engine='python'}
+`r ''```{r test-python, engine='python'}
 import eli5
 import sklearn
 import pandas as pd
@@ -56,14 +56,14 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, rando
 
 Create a baseline model for sake of simplicity:
 
-```{r test-python, engine='python'}
+`r ''```{r test-python, engine='python'}
 from sklearn.ensemble import RandomForestRegressor
 baseline_model = RandomForestRegressor(n_estimators=100,random_state=0).fit(X_train, Y_train)
 ```
 
 Perform the permutation and show the scores using the eli5 library:
 
-```{r test-python, engine='python'}
+`r ''```{r test-python, engine='python'}
 from eli5.sklearn import PermutationImportance
 perm = PermutationImportance(baseline_model).fit(X_test, Y_test)
 eli5.show_weights(perm,feature_names=X_train.columns.to_list())
